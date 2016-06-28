@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/hfcard">
+
+    <RelativeLayout
+        android:id="@+id/rl_card_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:background="@mipmap/card_arrow1"
+                android:id="@+id/aaa"
+                android:layout_width="4dp"
+                android:layout_height="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#563900"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:text="主申请卡"
+                android:layout_toRightOf="@id/aaa"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="我的工资卡"
+            android:textColor="#563900"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="45dp"
+            android:text="挂失"
+            android:textColor="#563900" />
+
+        <TextView
+            android:id="@+id/tv_card_cardnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="2834946493849453"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_card_cardbalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_card_cardnumber"
+            android:layout_below="@id/tv_card_cardnumber"
+            android:layout_marginTop="7dip">
+
+            <TextView
+                android:id="@+id/tv_card_cardbalance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_card_cardbalance"
+                android:layout_marginBottom="3dp"
+                android:text="可用余额："
+                android:textColor="#563900"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_card_cardbalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_card_cardbalance1"
+                android:text="￥1000.000.000"
+                android:textColor="#563900"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
